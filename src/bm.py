@@ -28,7 +28,7 @@ class Bm(object):
         while i < len(self.text):
             for j in range(patlen):
                 if self.text[i - j] != self.pattern[patlen - j - 1]:
-                    i += self.decide_slide_width(self.text[i - j])
+                    i += self.decide_slide_width(self.text[i])
                     break
             else:
                 return i - (patlen - 1)

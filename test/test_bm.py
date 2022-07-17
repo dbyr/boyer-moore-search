@@ -11,6 +11,12 @@ from src.bm import Bm
     ("ANPANMAN", "PAN", 2),
     ("ANPANMAN", "ANPAN", 0),
     ("ANPANMAN", "BIKINMAN", -1),
+
+    ("LONGER", "PATLONGER", -1),
+    ("", "ANYPAT", -1),
+    ("AAABAAAABB", "AAAA", 4),
+    ("AAABAAAABB", "BBAA", -1),
+    ("AAABAAAABB", "ABB", 7),
 ])
 def test_bm(text, pattern, expected):
     bm = Bm(text, pattern)
